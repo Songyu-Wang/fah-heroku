@@ -10,7 +10,6 @@ RUN sed -i '$ d' /etc/fahclient/config.xml
 RUN echo '<slot id="0" type="CPU"/>' >> /etc/fahclient/config.xml
 RUN echo '<slot id="1" type="CPU"/>' >> /etc/fahclient/config.xml
 RUN echo '<slot id="2" type="CPU"/>' >> /etc/fahclient/config.xml
-RUN echo '<slot id="3" type="CPU"/>' >> /etc/fahclient/config.xml
 RUN echo '</config>' >> /etc/fahclient/config.xml
 RUN cat /etc/fahclient/config.xml
 
