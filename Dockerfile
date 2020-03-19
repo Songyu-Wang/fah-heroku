@@ -15,6 +15,4 @@ RUN echo '<slot id="3" type="CPU"/>' >> /etc/fahclient/config.xml
 RUN echo '</config>' >> /etc/fahclient/config.xml
 RUN cat /etc/fahclient/config.xml
 
-RUN echo "30 * * *  * timeout 30s /etc/init.d/FAHClient log > /log.txt 2>&1" | crontab -
-
 ADD run.sh .
